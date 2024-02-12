@@ -7,7 +7,7 @@ const recomend_swiper = new Swiper(".recomend-swiper", {
     breakpoints: {
       960: {
           // ウィンドウ幅が600以上の時の表示枚数
-          slidesPerView: 1.5,
+          slidesPerView: 2.5,
           spaceBetween: 50,
       },
     },     
@@ -15,7 +15,7 @@ const recomend_swiper = new Swiper(".recomend-swiper", {
     centeredSlides: true,
     autoHeight: true,
     autoplay: {
-      delay: 5000
+      delay: 10000
     },
     //本来見えていない部分にスライドを複製する
     navigation: {
@@ -35,7 +35,7 @@ const partenership_swiper = new Swiper(".partenership-swiper", {
   breakpoints: {
     960: {
         // ウィンドウ幅が600以上の時の表示枚数
-        slidesPerView: 1.7,
+        slidesPerView: 2.5,
         spaceBetween: 30,
     },
 },  

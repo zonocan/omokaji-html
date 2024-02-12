@@ -23,11 +23,26 @@
 <body>
   <header class="header">
     <div class="inner d-fl">
-      <h1 class="header-logo"><img src="./asset/logo.svg" alt="logo"></h1>
+      <h1 class="header-logo"><a href="#top"><img src="./asset/logo.svg" alt="logo"></a></h1>
       <div class="hum-btn pc-d-none">
         <span></span>
         <span></span>
       </div>
+      <nav class="sp-d-none pc-header-nav">
+        <ul class="d-fl">
+          <li class="pc-header-nav-link link-active"><a href="#top">TOP</a></li>
+          <li class="pc-header-nav-link"><a href="#recomennd">RANKINNG</a></li>
+          <li class="pc-header-nav-link"><a href="#bonus">BONUS</a></li>
+          <li class="pc-header-nav-link"><a href="#search">SEARCH</a></li>
+          <li class="pc-header-nav-link"><a href="#payment">PAYMENT</a></li>
+          <li class="pc-header-nav-link"><a href="#guide">GUIDE</a></li>
+          <li class="pc-header-nav-link"><a href="#event">EVENT</a></li>
+          <li class="pc-header-nav-link"><a href="#games">GAMES</a></li>
+          <li class="pc-header-nav-link"><a href="#event">EVENT</a></li>
+          <li class="pc-header-nav-link"><a href="#about">ABOUT</a></li>
+          <!-- <li><a href="#partenership">提携オンラインカジノ</a></li> -->
+        </ul>        
+      </nav>
     </div>
   </header>
   <!-- header終了 -->
@@ -47,7 +62,7 @@
         <li><a href="#games">GAMES</a></li>
         <li><a href="#event">EVENT</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#partenership">提携オンラインカジノ</a></li>
+        <!-- <li><a href="#partenership">提携オンラインカジノ</a></li> -->
       </ul>
     </nav>
 
@@ -75,9 +90,20 @@
       <div class="top-content-sp pc-d-none">
         <img src="./asset/top-message-bg-sp.png" alt="バックグラウンド">
         <p class="top-message-01-sp"><img src="./asset/top-message01-sp.png" alt="業界No.1の"></p>
-        <p class="top-message-02-sp"><img src="./asset/top-message02-sp.png" alt=""></p>
-        <p class="top-message-03-sp"><img src="./asset/top-message03-sp.png" alt=""></p>
+        <p class="top-message-02-sp"><img src="./asset/top-message02-sp.png" alt="オンラインカジノメディア"></p>
+        <p class="top-message-03-sp"><img src="./asset/top-message03-sp.png" alt="ニュースサイト"></p>
       </div>
+      <!-- sp -->
+
+      <img src="./asset/top-backgroung-pc.svg" alt="トップページバナー" class="sp-d-none">
+      <div class="top-content-pc sp-d-none">
+        <img src="./asset/top-message-bg-pc.png" alt="バックグラウンド" class="sp-d-none">
+        <p class="top-message-01-pc"><img src="./asset/top-message01-pc.png" alt="業界No.1の"></p>
+        <p class="top-message-02-pc"><img src="./asset/top-message02-pc.png" alt="オンラインカジノメディア"></p>
+        <p class="top-message-03-pc"><img src="./asset/top-message03-pc.png" alt="ニュースサイト"></p>
+      </div>  
+      <!-- pc -->
+
     </div>
     <!-- #top -->
 
@@ -238,7 +264,7 @@
       </h2>  
       <div class="inner bonus-inner">
         <article>
-          <ul>
+          <ul class="pc-d-fl">
             <li>
               <a href="">
                 <img src="./asset/posts/スクリーンショット 2024-02-05 22.17.03.png" alt="">
@@ -286,7 +312,7 @@
           <span>SEARCH</span>
           <small>~ カジノ比較 ~</small>
         </h2>     
-        <ul class="search-contents-wrapper">
+        <ul class="search-contents-wrapper pc-d-fl">
           <li class="search-content">
             <a href="" class="d-fl">
               <span class="search-icons">
@@ -351,7 +377,7 @@
         <small>~ お支払い方法 ~</small>
       </h2>  
       <div class="inner payment-inner">
-        <div class="payment-contents">
+        <div class="payment-contents pc-d-fl">
 
           <div class="payment-content">
             <ul>
@@ -476,7 +502,7 @@
           <span>GUIDE</span>
           <small>~始め方ガイド~</small>
         </h2>  
-        <article class="guide-contents">
+        <article class="guide-contents pc-d-fl">
           <div class="guide-content">
             <ul>
               <li class="guide-bunner">
@@ -540,7 +566,7 @@
           <span>EVENT</span>
           <small>~イベント情報~</small>
         </h2>     
-        <article class="event-contents">
+        <article class="event-contents pc-d-fl">
           <div class="event-content">
             <ul>
               <li class="event-bunner">
@@ -596,8 +622,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
-                <li><img src="./asset/games-bakara.svg" alt="バカラ"></li>
-                <li>バカラ</li>
+                <span class="games-content-inne">
+                  <li><img src="./asset/games-bakara.svg" alt="バカラ"></li>
+                  <li>バカラ</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -605,8 +633,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-blackjack.svg" alt="ブラックジャック"></li>
                 <li>ブラックジャック</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -614,8 +644,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-blackjack.svg" alt="スロット"></li>
                 <li>スロット</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -623,8 +655,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-pocker.svg" alt="ポーカー"></li>
                 <li>ポーカー</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -632,8 +666,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-rueret.svg" alt="ルーレット"></li>
                 <li>ルーレット</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -641,8 +677,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-jickpor.svg" alt="ジックポー"></li>
                 <li>ジックポー</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -650,8 +688,10 @@
           <div class="games-content">
             <a href="" target="_blank">
               <ul>
+                <span class="games-content-inner">
                 <li><img src="./asset/games-sportsbet.svg" alt="ジックポー"></li>
                 <li>スポーツベット</li>
+                </span>
               </ul>
             </a>
           </div>
@@ -672,6 +712,7 @@
           <small>~ サイト概要 ~</small>
         </h2>           
         <img src="./asset/top-background-sp.svg" alt="トップページバナー" class="pc-d-none about-illust-sp">
+        <img src="./asset/top-backgroung-pc.svg" alt="トップページバナー" class="sp-d-none about-illust-pc">
         <div class="inner about-inner">
           <h3>業界新世代オンラインカジノメディア</h3>
           <p>
@@ -796,36 +837,39 @@
   <footer class="footer bg-blue-section">
     <div class="inner">
       <h1 class="footer-logo"><img src="./asset/logo.svg" alt="logo"></h1> 
-      <nav>
-        <ul>
-          <li class="footer-link-title">サイトマップ</li>
-          <li><a href="#top">TOP</a></li>
-          <li><a href="#recomennd">RANKINNG</a></li>
-          <li><a href="#bonus">BONUS</a></li>
-          <li><a href="#search">SEARCH</a></li>
-          <li><a href="#payment">PAYMENT</a></li>
-          <li><a href="#guide">GUIDE</a></li>
-          <li><a href="#event">EVENT</a></li>
-          <li><a href="#games">GAMES</a></li>
-          <li><a href="#event">EVENT</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#partenership">提携オンラインカジノ</a></li>
-        </ul>
-      </nav> 
-      
-      <nav>
-        <ul>
-          <li class="footer-link-title">関連サイト</li>
-          <li><a href="">テキストテキストテキストテキストテキスト</a></li>
-          <li><a href="">テキストテキストテキスト</a></li>
-          <li><a href="">テキストテキストテキストテキスト</a></li>
-          <li><a href="">テキストテキストテキスト</a></li>
-        </ul>
-      </nav>  
-      
-      <a href="" target="_blank" rel="noopener noreferrer" class="footer-twitter-btn">
-        <img src="./asset/twitter-white.svg" alt="twitter">
-      </a>
+
+      <div class="pc-d-fl">
+        <nav>
+          <ul>
+            <li class="footer-link-title">サイトマップ</li>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#recomennd">RANKINNG</a></li>
+            <li><a href="#bonus">BONUS</a></li>
+            <li><a href="#search">SEARCH</a></li>
+            <li><a href="#payment">PAYMENT</a></li>
+            <li><a href="#guide">GUIDE</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#games">GAMES</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <!-- <li><a href="#partenership">提携オンラインカジノ</a></li> -->
+          </ul>
+        </nav> 
+        
+        <nav>
+          <ul>
+            <li class="footer-link-title">関連サイト</li>
+            <li><a href="">テキストテキストテキストテキストテキスト</a></li>
+            <li><a href="">テキストテキストテキスト</a></li>
+            <li><a href="">テキストテキストテキストテキスト</a></li>
+            <li><a href="">テキストテキストテキスト</a></li>
+          </ul>
+        </nav>  
+        
+        <a href="" target="_blank" rel="noopener noreferrer" class="footer-twitter-btn">
+          <img src="./asset/twitter-white.svg" alt="twitter">
+        </a>
+      </div>
     </div>
   </footer>
 

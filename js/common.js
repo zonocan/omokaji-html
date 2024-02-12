@@ -80,6 +80,17 @@ window.addEventListener('scroll', function(){
 });
 // header
 
+const headerNavlnk = document.querySelectorAll('.pc-header-nav-link');
+for (let i = 0; i < headerNavlnk.length; i++) {
+  headerNavlnk[i].addEventListener("click", linkSwitch);
+}
+
+function linkSwitch() {
+  document.querySelectorAll(".link-active")[0].classList.remove('link-active');
+  this.classList.add('link-active');
+}
+
+
 const humbtn = document.querySelector('.hum-btn');
 const humlist = document.querySelector('.hum-list');
 humbtn.addEventListener('click', () => {
